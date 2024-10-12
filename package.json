@@ -28,7 +28,7 @@
   },
   "license": "Unlicense",
   "scripts": {
-    "start": "node app.js"
+    "start": "app.js"
   },
   "dependencies": {
     "base64url": "^3.0.1",
