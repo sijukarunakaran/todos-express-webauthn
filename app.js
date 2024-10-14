@@ -36,7 +36,7 @@ app.use(session({
   saveUninitialized: false, // don't create session until something stored
   store: new SQLiteStore({ db: 'sessions.db', dir: '/tmp' })
 }));
-//app.use(csrf());
+app.use(csrf());
 app.use(passport.authenticate('session'));
 app.use(function(req, res, next) {
   var msgs = req.session.messages || [];
